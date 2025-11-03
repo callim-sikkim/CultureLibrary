@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="CultureLibrary.AppHost/CultureLibrary.AppHost.csproj" />
+  <Project Path="CultureLibrary.BookApi\CultureLibrary.BookApi.csproj" />
+  <Project Path="CultureLibrary.ServiceDefaults/CultureLibrary.ServiceDefaults.csproj" />
+  <Project Path="CultureLibrary.Tests/CultureLibrary.Tests.csproj" />
+</Solution>
