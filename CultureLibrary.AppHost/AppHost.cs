@@ -7,7 +7,15 @@ var bookApi = builder.AddProject<Projects.CultureLibrary_BookApi>("BookApi")
     .WaitFor(cache)
     .WithHttpHealthCheck("/health");
 
-builder.AddNpmApp("angular", "../CultureLibrary.Web")
+var scriptNpmName = "start";
+
+#if DEBUG
+scriptNpmName = "start-dev";
+#endif
+
+
+
+builder.AddNpmApp("angular", "../CultureLibrary.Web",  scriptNpmName)
     .WithReference(cache)
     .WaitFor(cache)
     .WithReference(bookApi)

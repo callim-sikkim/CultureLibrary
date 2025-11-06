@@ -4,9 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start-dev": "ng serve --configuration development",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "generate-book-api" : "npx openapi-generator-cli generate -i http://localhost:5535/swagger/v1/swagger.json -g typescript-angular -o ./src/app/shared/api-book-service",
     "serve:ssr:CultureLibrary.Web": "node dist/CultureLibrary.Web/server/server.mjs"
   },
   "prettier": {
@@ -39,6 +41,7 @@
     "@angular/build": "^20.3.8",
     "@angular/cli": "^20.3.8",
     "@angular/compiler-cli": "^20.3.0",
+    "@openapitools/openapi-generator-cli": "^2.25.0",
     "@types/express": "^5.0.1",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^20.17.19",
