@@ -1,0 +1,12 @@
+@if (booksResource.error()) {
+  <p>Failed to load books</p>
+} @else if (booksResource.isLoading())
+{
+  <p>Loading...</p>
+} @else {
+  <p>Books: </p>
+  @for (book of booksResource.value(); track $index)
+  {
+    <p>{{book}}</p>
+  }
+}

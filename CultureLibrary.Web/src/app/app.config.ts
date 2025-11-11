@@ -3,7 +3,8 @@ import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
 import {provideHttpClient} from '@angular/common/http';
-import {provideApi} from './shared/api-book-service';
+import {provideApi as provideBookApi} from './shared/api-book-service';
+import {provideApi as provideGameApi} from './shared/api-game-service';
 import {environment} from '../environments/environment';
 
 export const appConfig: ApplicationConfig = {
@@ -13,6 +14,7 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideClientHydration(withEventReplay()),
     provideHttpClient(),
-    provideApi(environment.bookApiUrl),
+    provideBookApi(environment.bookApiUrl),
+    provideGameApi(environment.gameApiUrl),
   ]
 };

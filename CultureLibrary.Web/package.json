@@ -9,6 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "generate-book-api" : "npx openapi-generator-cli generate -i http://localhost:5535/swagger/v1/swagger.json -g typescript-angular -o ./src/app/shared/api-book-service",
+    "generate-game-api" : "npx openapi-generator-cli generate -i http://localhost:5193/swagger/v1/swagger.json -g typescript-angular -o ./src/app/shared/api-game-service",
     "serve:ssr:CultureLibrary.Web": "node dist/CultureLibrary.Web/server/server.mjs"
   },
   "prettier": {

@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CultureLibrary.ApiCore\CultureLibrary.ApiCore.csproj" />
     <ProjectReference Include="..\CultureLibrary.ServiceDefaults\CultureLibrary.ServiceDefaults.csproj" />
   </ItemGroup>
 

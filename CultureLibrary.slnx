@@ -1,6 +1,10 @@
 <Solution>
+  <Folder Name="/API/">
+    <Project Path="CultureLibrary.ApiCore\CultureLibrary.ApiCore.csproj" Type="Classic C#" />
+    <Project Path="CultureLibrary.BookApi\CultureLibrary.BookApi.csproj" />
+    <Project Path="CultureLibrary.GameApi\CultureLibrary.GameApi.csproj" Type="Classic C#" />
+  </Folder>
   <Project Path="CultureLibrary.AppHost/CultureLibrary.AppHost.csproj" />
-  <Project Path="CultureLibrary.BookApi\CultureLibrary.BookApi.csproj" />
   <Project Path="CultureLibrary.ServiceDefaults/CultureLibrary.ServiceDefaults.csproj" />
   <Project Path="CultureLibrary.Tests/CultureLibrary.Tests.csproj" />
 </Solution>

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace CultureLibrary.BookApi.BookApi;
+namespace CultureLibrary.API.BookApi;
 
 [Route("api/[controller]")]
 [ApiController]
@@ -18,7 +18,7 @@ public class BookController : ControllerBase
         return Ok(_mock);
     }
     
-    [HttpGet("id")]
+    [HttpGet("{id}")]
     public IActionResult GetBook(string id)
     {
         return Ok(_mock.First());

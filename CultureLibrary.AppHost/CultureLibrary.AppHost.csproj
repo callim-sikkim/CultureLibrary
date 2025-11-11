@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CultureLibrary.BookApi\CultureLibrary.BookApi.csproj" />
+    <ProjectReference Include="..\CultureLibrary.GameApi\CultureLibrary.GameApi.csproj" />
   </ItemGroup>
 
   <ItemGroup>
