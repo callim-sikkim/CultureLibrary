@@ -10,6 +10,15 @@ import { join } from 'node:path';
 const browserDistFolder = join(import.meta.dirname, '../browser');
 
 const app = express();
+
+app.use((req, res, next) => {
+  res.setHeader(
+    'Content-Security-Policy',
+    "default-src 'self'; connect-src 'self' http://localhost:*; img-src 'self' data:;"
+  );
+  next();
+});
+
 const angularApp = new AngularNodeAppEngine();
 
 /**
